@@ -1,0 +1,20 @@
+.nav-bar {
+  display: flex;
+}
+
+.nav-bar > div { /*added to each div within nav-bar*/
+    padding: 10px;
+}
+
+#main-body {
+  display: flex;
+}
+
+#portrait {
+  width: 40vmin;
+  height: 30vmax;
+}
+
+#main-text {
+  padding-left: 5vw;
+}
