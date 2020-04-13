@@ -1,9 +1,10 @@
 .nav-bar {
   display: flex;
+  margin-bottom: 5vh;
 }
 
 .nav-bar > div { /*added to each div within nav-bar*/
-    padding: 10px;
+    padding-right: 2vw;
 }
 
 #main-body {
@@ -11,10 +12,75 @@
 }
 
 #portrait {
-  width: 40vmin;
-  height: 30vmax;
+  transform: rotate(270deg);
+  height: 30vmin;
+  margin-top: 5vh;
 }
 
-#main-text {
-  padding-left: 5vw;
+.salon-tour {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: blue;
+}
+
+.links {
+  list-style-type: none;
+}
+
+.contact-body {
+  display: flex;
+}
+
+.contact-info {
+  margin-left: 2vw;
+}
+
+.column {
+  flex-direction: column;
+}
+
+/* Gallery Styles
+------------------ */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16vw, auto));
+  align-items: center;
+}
+
+.ccsgal {
+  max-width: 12vw;
+  margin-bottom: 8vh;
+  border-width: medium;
+  border-color: grey;
+  border-style: groove;
+}
+
+.wedgal {
+  max-width: 12vw;
+  margin-bottom: 8vh;
+  border-width: medium;
+  border-color: grey;
+  border-style: groove;
+}
+
+.mengal {
+  max-width: 12vw;
+  margin-bottom: 8vh;
+  border-width: medium;
+  border-color: grey;
+  border-style: groove;
+}
+
+.kidgal {
+  max-width: 12vw;
+  margin-bottom: 8vh;
+  border-width: medium;
+  border-color: grey;
+  border-style: groove;
 }
