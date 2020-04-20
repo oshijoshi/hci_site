@@ -5,34 +5,37 @@
     <meta charset="utf-8">
     <title>Contact Us</title>
     <link rel="stylesheet" type-"text/css" href="style.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
   </head>
 
   <body>
-    <div>
-      <h1>Dax Beauty Salon & Spa</h1>
+    <div class="header">
+      <div>
+        <h1>Dax Beauty Salon & Spa</h1>
+      </div>
+      <div class="nav-bar">
+        <div>
+          <a class="home" href="index.html">Home</a>
+        </div>
+        <div>
+          <a id="ccs" href="gallery_ccs.html">Color, Cut, & Style</a>
+        </div>
+        <div>
+          <a id="wed" href="gallery_weddings.html">Weddings</a>
+        </div>
+        <div>
+          <a id="men" href="gallery_men.html">Men's Cuts</a>
+        </div>
+        <div>
+          <a id="kids" href="gallery_kids.html">Kids</a>
+        </div>
+        <div>
+          <a id="contact" href="contact.html">Contact Us</a>
+        </div>
+      </div>
     </div>
-    <div class="nav-bar">
-      <div>
-        <a href="index.html">Home</a>
-      </div>
-      <div>
-        <a href="gallery_ccs.html">Color, Cut, & Style</a>
-      </div>
-      <div>
-        <a href="gallery_weddings.html">Weddings</a>
-      </div>
-      <div>
-        <a href="gallery_men.html">Men</a>
-      </div>
-      <div>
-        <a href="gallery_kids.html">Kids</a>
-      </div>
-      <div>
-        <a href="contact.html">Contact Us</a>
-      </div>
-    </div>
     <div>
-      <h2>Contact Us</h2>
+      <h2><span>Contact Us</span></h2>
       <div class="contact-body">
         <div class="google-listing">
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12696.66511399539!2d-122.032824!3d37.2911928!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4918bacceea2a815!2sDax%20Beauty%20salon%20and%20spa!5e0!3m2!1sen!2sus!4v1586802644103!5m2!1sen!2sus" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
@@ -50,6 +53,18 @@
         </div>
       </div>
     </div>
+
+    <button onclick="toTop()" id="topBtn" title="Go to top">Top</button>
+
   </body>
+
+  <script type="text/javascript">
+    window.onscroll = function() {scrollFunction()};
+  </script>
+
+  <script type="text/javascript">
+    $(".contact").css("background-color", "#464646");
+    $(".contact").css("color", "white");
+  </script>
 
 </html>

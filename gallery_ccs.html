@@ -5,51 +5,55 @@
     <meta charset="utf-8">
     <title>Color, Cut & Style</title>
     <link rel="stylesheet" type-"text/css" href="style.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="script.js"></script>
   </head>
 
   <body>
-    <div>
-      <h1>Dax Beauty Salon & Spa</h1>
+    <div class="header">
+      <div>
+        <h1>Dax Beauty Salon & Spa</h1>
+      </div>
+      <div class="nav-bar">
+        <div>
+          <a class="home" href="index.html">Home</a>
+        </div>
+        <div>
+          <a class="ccs" href="gallery_ccs.html">Color, Cut, & Style</a>
+        </div>
+        <div>
+          <a id="wed" href="gallery_weddings.html">Weddings</a>
+        </div>
+        <div>
+          <a id="men" href="gallery_men.html">Men's Cuts</a>
+        </div>
+        <div>
+          <a id="kids" href="gallery_kids.html">Kids</a>
+        </div>
+        <div>
+          <a id="contact" href="contact.html">Contact Us</a>
+        </div>
+      </div>
     </div>
-    <div class="nav-bar">
-      <div>
-        <a href="index.html">Home</a>
-      </div>
-      <div>
-        <a href="gallery_ccs.html">Color, Cut, & Style</a>
-      </div>
-      <div>
-        <a href="gallery_weddings.html">Weddings</a>
-      </div>
-      <div>
-        <a href="gallery_men.html">Men</a>
-      </div>
-      <div>
-        <a href="gallery_kids.html">Kids</a>
-      </div>
-      <div>
-        <a href="contact.html">Contact Us</a>
-      </div>
-    </div>
-    <h2>Color, Cut, & Style</h2>
+    <h2><span>Color, Cut, & Style</span></h2>
     <div class="gallery">
       <img src="images/ccs/1.JPG" class="ccsgal"></img>
       <img src="images/ccs/2.JPG" class="ccsgal"></img>
-      <img src="images/ccs/3.JPG" class="ccsgal"></img>
+      <img src="images/ccs/8.JPG" class="ccsgal"></img>
       <img src="images/ccs/4.JPG" class="ccsgal"></img>
       <img src="images/ccs/5.JPG" class="ccsgal"></img>
       <img src="images/ccs/6.JPG" class="ccsgal"></img>
       <img src="images/ccs/7.JPG" class="ccsgal"></img>
-      <img src="images/ccs/8.JPG" class="ccsgal"></img>
+      <!-- <img src="images/ccs/3.JPG" class="ccsgal"></img> -->
       <img src="images/ccs/9.JPG" class="ccsgal"></img>
       <img src="images/ccs/10.JPG" class="ccsgal"></img>
       <img src="images/ccs/11.JPG" class="ccsgal"></img>
       <img src="images/ccs/12.JPG" class="ccsgal"></img>
       <img src="images/ccs/13.JPG" class="ccsgal"></img>
-      <!-- <img src="images/ccs/14.JPG" class="ccsgal"></img>
-      <img src="images/ccs/15.JPG" class="ccsgal"></img> -->
+      <img src="images/ccs/14.JPG" class="ccsgal"></img>
+      <img src="images/ccs/15.JPG" class="ccsgal"></img>
       <img src="images/ccs/16.JPG" class="ccsgal"></img>
-      <!-- <img src="images/ccs/17.JPG" class="ccsgal"></img>
+      <img src="images/ccs/17.JPG" class="ccsgal"></img>
       <img src="images/ccs/18.JPG" class="ccsgal"></img>
       <img src="images/ccs/19.JPG" class="ccsgal"></img>
       <img src="images/ccs/20.JPG" class="ccsgal"></img>
@@ -57,27 +61,42 @@
       <img src="images/ccs/22.JPG" class="ccsgal"></img>
       <img src="images/ccs/23.JPG" class="ccsgal"></img>
       <img src="images/ccs/24.JPG" class="ccsgal"></img>
-      <img src="images/ccs/25.JPG" class="ccsgal"></img> -->
+      <img src="images/ccs/25.JPG" class="ccsgal"></img>
       <img src="images/ccs/26.JPG" class="ccsgal"></img>
       <img src="images/ccs/27.JPG" class="ccsgal"></img>
-      <!-- <img src="images/ccs/28.JPG" class="ccsgal"></img>
+      <img src="images/ccs/28.JPG" class="ccsgal"></img>
       <img src="images/ccs/29.JPG" class="ccsgal"></img>
       <img src="images/ccs/30.JPG" class="ccsgal"></img>
-      <img src="images/ccs/31.JPG" class="ccsgal"></img> -->
+      <img src="images/ccs/31.JPG" class="ccsgal"></img>
       <img src="images/ccs/32.JPG" class="ccsgal"></img>
       <img src="images/ccs/33.JPG" class="ccsgal"></img>
-      <!-- <img src="images/ccs/34.JPG" class="ccsgal"></img>
+      <img src="images/ccs/34.JPG" class="ccsgal"></img>
       <img src="images/ccs/35.JPG" class="ccsgal"></img>
-      <img src="images/ccs/36.JPG" class="ccsgal"></img> -->
+      <img src="images/ccs/36.JPG" class="ccsgal"></img>
       <img src="images/ccs/37.JPG" class="ccsgal"></img>
       <img src="images/ccs/38.JPG" class="ccsgal"></img>
       <img src="images/ccs/39.JPG" class="ccsgal"></img>
       <img src="images/ccs/40.JPG" class="ccsgal"></img>
-      <!-- <img src="images/ccs/41.JPG" class="ccsgal"></img>
+      <img src="images/ccs/41.JPG" class="ccsgal"></img>
       <img src="images/ccs/42.JPG" class="ccsgal"></img>
-      <img src="images/ccs/43.JPG" class="ccsgal"></img> -->
-      <!-- TODO: rotate commented out images  -->
+      <img src="images/ccs/43.JPG" class="ccsgal"></img>
     </div>
+
+    <button onclick="toTop()" id="topBtn" title="Go to top">Top</button>
+    
   </body>
+
+  <script type="text/javascript">
+    lightbox();
+  </script>
+
+  <script type="text/javascript">
+    window.onscroll = function() {scrollFunction()};
+  </script>
+
+  <script type="text/javascript">
+    $(".ccs").css("background-color", "#464646");
+    $(".ccs").css("color", "white");
+  </script>
 
 </html>

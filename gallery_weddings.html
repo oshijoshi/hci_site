@@ -5,33 +5,37 @@
     <meta charset="utf-8">
     <title>Weddings</title>
     <link rel="stylesheet" type-"text/css" href="style.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="script.js"></script>
   </head>
 
   <body>
-    <div>
-      <h1>Dax Beauty Salon & Spa</h1>
+    <div class="header">
+      <div>
+        <h1>Dax Beauty Salon & Spa</h1>
+      </div>
+      <div class="nav-bar">
+        <div>
+          <a id="home" href="index.html">Home</a>
+        </div>
+        <div>
+          <a id="ccs" href="gallery_ccs.html">Color, Cut, & Style</a>
+        </div>
+        <div>
+          <a class="wed" href="gallery_weddings.html">Weddings</a>
+        </div>
+        <div>
+          <a id="men" href="gallery_men.html">Men's Cuts</a>
+        </div>
+        <div>
+          <a id="kids" href="gallery_kids.html">Kids</a>
+        </div>
+        <div>
+          <a id="contact" href="contact.html">Contact Us</a>
+        </div>
+      </div>
     </div>
-    <div class="nav-bar">
-      <div>
-        <a href="index.html">Home</a>
-      </div>
-      <div>
-        <a href="gallery_ccs.html">Color, Cut, & Style</a>
-      </div>
-      <div>
-        <a href="gallery_weddings.html">Weddings</a>
-      </div>
-      <div>
-        <a href="gallery_men.html">Men</a>
-      </div>
-      <div>
-        <a href="gallery_kids.html">Kids</a>
-      </div>
-      <div>
-        <a href="contact.html">Contact Us</a>
-      </div>
-    </div>
-    <h2>Weddings</h2>
+    <h2><span>Weddings</span></h2>
     <div class="gallery">
       <img src="images/wedding/1.JPG" class="wedgal"></img>
       <img src="images/wedding/2.JPG" class="wedgal"></img>
@@ -49,6 +53,22 @@
       <img src="images/wedding/14.JPG" class="wedgal"></img>
       <img src="images/wedding/15.JPG" class="wedgal"></img>
     </div>
+
+    <button onclick="toTop()" id="topBtn" title="Go to top">Top</button>
+
   </body>
+
+  <script type="text/javascript">
+    window.onscroll = function() {scrollFunction()};
+  </script>
+
+  <script type="text/javascript">
+    lightbox();
+  </script>
+
+  <script type="text/javascript">
+    $(".wed").css("background-color", "#464646");
+    $(".wed").css("color", "white");
+  </script>
 
 </html>
